@@ -1,6 +1,7 @@
 const yargs = require("yargs");
 
 const fs = require("fs");
+const { showCompletionScript } = require("yargs");
 
 const addNote = (myNote) => {
      const allNotes = loadNotes()
@@ -23,7 +24,17 @@ const saveNotes = allNotes => {
     fs.writeFileSync("src/notes.json", notesJson);
 };
 
+
+const listNotes = () => {
+    const allNotes = loadNotes();
+
+    allNotes.map(note => {
+        console.log(`${index + 1}. ${note.reminder}`);
+    });
+    };
+
 module.exports = {
     addNote,
-    loadNotes
+    loadNotes,
+    listNotes
 };
