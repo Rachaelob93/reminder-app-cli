@@ -1,0 +1,23 @@
+{
+  "name": "reminder-app-cli",
+  "version": "1.0.0",
+  "description": "Command lne application in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rachaelob93/reminder-app-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rachaelob93/reminder-app-cli/issues"
+  },
+  "homepage": "https://github.com/Rachaelob93/reminder-app-cli#readme",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
